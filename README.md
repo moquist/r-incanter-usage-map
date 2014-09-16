@@ -8,6 +8,7 @@ things are found.
 
 At this moment, the "equivalent to R's ...." strings from Incanter doc strings
 from the following namespaces have been verified to be included here:
+
 1. incanter.core
 
 For brevity, Incanter namespaces are abbreviated as (e.g.) ```datasets```
