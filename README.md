@@ -3,8 +3,8 @@ r-incanter-usage-map
 
 function and data-type map between R and Incanter
 
-This is intended just to be a starting point, and is being added to as missing
-things are found.
+This is intended just to be a starting point, and is being added to gradually.
+(Feel free to help!)
 
 At this moment, the "equivalent to R's ...." strings from Incanter doc strings
 from the following namespaces have been verified to be included here:
