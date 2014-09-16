@@ -12,6 +12,7 @@ commit](https://github.com/incanter/incanter/tree/d710e5e7af129841d470abf8eb7fbb
 from the following namespaces have been verified to be included here:
 
 1. incanter.core
+1. incanter.stats
 
 For brevity, Incanter namespaces are abbreviated as (e.g.) ```datasets```
 instead of ```incanter.datasets```.
@@ -21,51 +22,72 @@ charts))```.  Namespaces are included here to help you avoid using ```use``` in
 this way, while also avoiding frustration at not knowing which namespaces have
 what.
 
-| R           | Incanter               | Equivalency Rating | Category | Comments                                       |
-|-------------|------------------------|--------------------|----------|----------------------------------------------  |
-| %*%         | core/mmult             | equivalent         | function |                                                |
-| *           | core/minus             | equivalent         | function |                                                |
-| +           | core/mult              | equivalent         | function |                                                |
-| -           | core/minus             | equivalent         | function |                                                |
-| /           | core/div               | equivalent         | function |                                                |
-| ^           | core/pow               | equivalent         | function |                                                |
-| abs         | core/abs               | equivalent         | function |                                                |
-| acos        | core/acos              | equivalent         | function |                                                |
-| as.matrix   | core/to-matrix         | equivalent         | function | equivalent when operating on datasets          |
-| asin        | core/asin              | equivalent         | function |                                                |
-| atan        | core/atan              | equivalent         | function |                                                |
-| atan2       | core/atan2             | equivalent         | function |                                                |
-| beta        | core/beta              | equivalent         | function |                                                |
-| cbind       | core/bind-columns      | equivalent         | function |                                                |
-| chol        | core/decomp-cholesky   | equivalent         | function |                                                |
-| choose      | core/choose            | equivalent         | function |                                                |
-| cos         | core/cos               | equivalent         | function |                                                |
-| data.frame  | dataset                | equivalent         | datatype | See datasets/get-dataset, io/read-dataset      |
-| det         | core/det               | equivalent         | function |                                                |
-| diag        | core/diag              | equivalent         | function |                                                |
-| eig         | core/decomp-eigenvalue | equivalent         | function |                                                |
-| exp         | core/exp               | equivalent         | function |                                                |
-| factor      | core/categorical-var   | equivalent         | function |                                                |
-| factorial   | core/factorial         | equivalent         | function |                                                |
-| gamma       | core/gamma             | equivalent         | function |                                                |
-| length      | core/length            | equivalent         | function |                                                |
-| log         | core/log               | equivalent         | function |                                                |
-| log2        | core/log2              | equivalent         | function |                                                |
-| log10       | core/log10             | equivalent         | function |                                                |
-| matrix      | incanter.Matrix        | instead            | datatype | Incanter matrices are exclusive to type Double |
-| matrix      | core/matrix            | equivalent         | function |                                                |
-| pbeta       | core/regularized-beta  | equivalent         | function |                                                |
-| qr          | core/decomp-qr         | equivalent         | function |                                                |
-| ncol        | core/ncol              | equivalent         | function | Incanter's only works on matrices              |
-| nrow        | core/nrow              | equivalent         | function | Incanter's only works on matrices              |
-| rbind       | core/bind-rows         | equivalent         | function |                                                |
-| sin         | core/sin               | equivalent         | function |                                                |
-| solve       | core/solve             | equivalent         | function |                                                |
-| sq          | core/sq                | equivalent         | function |                                                |
-| sqrt        | core/sqrt              | equivalent         | function |                                                |
-| svd         | core/decomp-svd        | equivalent         | function |                                                |
-| t           | core/trans             | equivalent         | function |                                                |
-| tan         | core/tan               | equivalent         | function |                                                |
+| R                | Incanter                   | Equivalency Rating | Category | Comments                                       |
+|------------------|----------------------------|--------------------|----------|----------------------------------------------  |
+| %*%              | core/mmult                 | equivalent         | function |                                                |
+| *                | core/minus                 | equivalent         | function |                                                |
+| +                | core/mult                  | equivalent         | function |                                                |
+| -                | core/minus                 | equivalent         | function |                                                |
+| /                | core/div                   | equivalent         | function |                                                |
+| ^                | core/pow                   | equivalent         | function |                                                |
+| abs              | core/abs                   | equivalent         | function |                                                |
+| acos             | core/acos                  | equivalent         | function |                                                |
+| as.matrix        | core/to-matrix             | equivalent         | function | equivalent when operating on datasets          |
+| asin             | core/asin                  | equivalent         | function |                                                |
+| atan             | core/atan                  | equivalent         | function |                                                |
+| atan2            | core/atan2                 | equivalent         | function |                                                |
+| beta             | core/beta                  | equivalent         | function |                                                |
+| cbind            | core/bind-columns          | equivalent         | function |                                                |
+| chol             | core/decomp-cholesky       | equivalent         | function |                                                |
+| choose           | core/choose                | equivalent         | function |                                                |
+| cos              | core/cos                   | equivalent         | function |                                                |
+| data.frame       | dataset                    | equivalent         | datatype | See datasets/get-dataset, io/read-dataset      |
+| det              | core/det                   | equivalent         | function |                                                |
+| dbeta            | stats/pdf-beta             | equivalent         | function |                                                |
+| dgamma           | stats/pdf-gamma            | equivalent         | function |                                                |
+| df               | stats/pdf-f                | equivalent         | function |                                                |
+| diag             | core/diag                  | equivalent         | function |                                                |
+| dnorm            | stats/pdf-normal           | equivalent         | function |                                                |
+| dunif            | stats/pdf-uniform          | equivalent         | function |                                                |
+| ecdf             | stats/cdf-empirical        | equivalent         | function |                                                |
+| eig              | core/decomp-eigenvalue     | equivalent         | function |                                                |
+| exp              | core/exp                   | equivalent         | function |                                                |
+| factor           | core/categorical-var       | equivalent         | function |                                                |
+| factorial        | core/factorial             | equivalent         | function |                                                |
+| gamma            | core/gamma                 | equivalent         | function |                                                |
+| length           | core/length                | equivalent         | function |                                                |
+| log              | core/log                   | equivalent         | function |                                                |
+| log2             | core/log2                  | equivalent         | function |                                                |
+| log10            | core/log10                 | equivalent         | function |                                                |
+| matrix           | incanter.Matrix            | instead            | datatype | Incanter matrices are exclusive to type Double |
+| matrix           | core/matrix                | equivalent         | function |                                                |
+| mvtnorm::rmvnorm | stats/sample-mvn           | equivalent         | function |                                                |
+| pbeta            | core/regularized-beta      | equivalent         | function | see also: stats/cdf-beta                       |
+| pbeta            | stats/cdf-beta             | equivalent         | function | see also: core/regularized-beta                |
+| pf               | stats/cdf-f                | equivalent         | function |                                                |
+| pgamma           | stats/cdf-gamma            | equivalent         | function |                                                |
+| pnorm            | stats/cdf-normal           | equivalent         | function |                                                |
+| prcomp           | stats/principal-components | equivalent         | function |                                                |
+| punif            | stats/cdf-uniform          | equivalent         | function |                                                |
+| qnorm            | stats/quantile-normal      | equivalent         | function |                                                |
+| rbeta            | stats/sample-beta          | equivalent         | function | see also: core/regularized-beta                |
+| rgamma           | stats/sample-gamma         | equivalent         | function |                                                |
+| rnorm            | stats/sample-normal        | equivalent         | function |                                                |
+| qr               | core/decomp-qr             | equivalent         | function |                                                |
+| qt               | stats/quantile-t           | equivalent         | function |                                                |
+| ncol             | core/ncol                  | equivalent         | function | Incanter's only works on matrices              |
+| nrow             | core/nrow                  | equivalent         | function | Incanter's only works on matrices              |
+| rbind            | core/bind-rows             | equivalent         | function |                                                |
+| runif            | stats/sample-uniform       | equivalent         | function |                                                |
+| sd               | stats/sd                   | equivalent         | function |                                                |
+| sin              | core/sin                   | equivalent         | function |                                                |
+| solve            | core/solve                 | equivalent         | function |                                                |
+| sq               | core/sq                    | equivalent         | function |                                                |
+| sqrt             | core/sqrt                  | equivalent         | function |                                                |
+| svd              | core/decomp-svd            | equivalent         | function |                                                |
+| t                | core/trans                 | equivalent         | function |                                                |
+| tan              | core/tan                   | equivalent         | function |                                                |
+| var              | stats/variance             | equivalent         | function |                                                |
 
 
 # Categories #
