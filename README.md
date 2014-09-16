@@ -44,10 +44,17 @@ what.
 | data.frame       | dataset                    | equivalent         | datatype | See datasets/get-dataset, io/read-dataset      |
 | det              | core/det                   | equivalent         | function |                                                |
 | dbeta            | stats/pdf-beta             | equivalent         | function |                                                |
-| dgamma           | stats/pdf-gamma            | equivalent         | function |                                                |
+| dbinom           | stats/pdf-binomial         | equivalent         | function |                                                |
+| dchisq           | stats/pdf-chisq            | equivalent         | function |                                                |
+| dexp             | stats/pdf-exp              | equivalent         | function |                                                |
 | df               | stats/pdf-f                | equivalent         | function |                                                |
+| dgamma           | stats/pdf-gamma            | equivalent         | function |                                                |
 | diag             | core/diag                  | equivalent         | function |                                                |
+| dnbinom          | stats/pdf-neg-binomial     | equivalent         | function | see also: stats/cdf-neg-binomial               |
+| dnbinom          | stats/cdf-neg-binomial     | equivalent         | function | see also: stats/pdf-neg-binomial               |
 | dnorm            | stats/pdf-normal           | equivalent         | function |                                                |
+| dpois            | stats/pdf-poisson          | equivalent         | function |                                                |
+| dt               | stats/pdf-t                | equivalent         | function |                                                |
 | dunif            | stats/pdf-uniform          | equivalent         | function |                                                |
 | ecdf             | stats/cdf-empirical        | equivalent         | function |                                                |
 | eig              | core/decomp-eigenvalue     | equivalent         | function |                                                |
@@ -64,15 +71,26 @@ what.
 | mvtnorm::rmvnorm | stats/sample-mvn           | equivalent         | function |                                                |
 | pbeta            | core/regularized-beta      | equivalent         | function | see also: stats/cdf-beta                       |
 | pbeta            | stats/cdf-beta             | equivalent         | function | see also: core/regularized-beta                |
+| pbnimom          | stats/cdf-binomial         | equivalent         | function |                                                |
+| pchisq           | stats/cdf-chisq            | equivalent         | function |                                                |
+| pexp             | stats/cdf-exp              | equivalent         | function |                                                |
 | pf               | stats/cdf-f                | equivalent         | function |                                                |
 | pgamma           | stats/cdf-gamma            | equivalent         | function |                                                |
 | pnorm            | stats/cdf-normal           | equivalent         | function |                                                |
+| ppois            | stats/cdf-poisson          | equivalent         | function |                                                |
 | prcomp           | stats/principal-components | equivalent         | function |                                                |
+| pt               | stats/cdf-t                | equivalent         | function |                                                |
 | punif            | stats/cdf-uniform          | equivalent         | function |                                                |
 | qnorm            | stats/quantile-normal      | equivalent         | function |                                                |
 | rbeta            | stats/sample-beta          | equivalent         | function | see also: core/regularized-beta                |
+| rbinom           | stats/sample-binomial      | equivalent         | function | see also: stats/sample-neg-binomial            |
+| rbinom           | stats/sample-neg-binomial  | equivalent         | function | see also: stats/sample-binomial                |
+| rchisq           | stats/sample-chisq         | equivalent         | function |                                                |
+| rexp             | stats/sample-exp           | equivalent         | function |                                                |
 | rgamma           | stats/sample-gamma         | equivalent         | function |                                                |
 | rnorm            | stats/sample-normal        | equivalent         | function |                                                |
+| rpois            | stats/sample-poisson       | equivalent         | function |                                                |
+| rt               | stats/sample-t             | equivalent         | function |                                                |
 | qr               | core/decomp-qr             | equivalent         | function |                                                |
 | qt               | stats/quantile-t           | equivalent         | function |                                                |
 | ncol             | core/ncol                  | equivalent         | function | Incanter's only works on matrices              |
