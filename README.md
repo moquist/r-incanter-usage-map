@@ -7,6 +7,8 @@ This is intended just to be a starting point, and is being added to gradually.
 (Feel free to help!)
 
 At this moment, the "equivalent to R's ...." strings from Incanter doc strings
+([from this
+commit](https://github.com/incanter/incanter/tree/d710e5e7af129841d470abf8eb7fbba004e10f79))
 from the following namespaces have been verified to be included here:
 
 1. incanter.core
