@@ -66,7 +66,7 @@ what.
 | log              | core/log                   | equivalent         | function |                                                |
 | log2             | core/log2                  | equivalent         | function |                                                |
 | log10            | core/log10                 | equivalent         | function |                                                |
-| matrix           | incanter.Matrix            | instead            | datatype | Incanter matrices are exclusive to type Double |
+| matrix           | clatrix.core.Matrix        | instead            | datatype | Clatrix matrices are exclusive to type Double  |
 | matrix           | core/matrix                | equivalent         | function |                                                |
 | mvtnorm::rmvnorm | stats/sample-mvn           | equivalent         | function |                                                |
 | pbeta            | core/regularized-beta      | equivalent         | function | see also: stats/cdf-beta                       |
