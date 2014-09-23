@@ -41,7 +41,7 @@ what.
 | chol             | core/decomp-cholesky       | equivalent         | function |                                                |
 | choose           | core/choose                | equivalent         | function |                                                |
 | cos              | core/cos                   | equivalent         | function |                                                |
-| data.frame       | dataset                    | equivalent         | datatype | See datasets/get-dataset, io/read-dataset      |
+| data.frame       | core.Dataset               | equivalent         | datatype | See datasets/get-dataset, io/read-dataset      |
 | det              | core/det                   | equivalent         | function |                                                |
 | dbeta            | stats/pdf-beta             | equivalent         | function |                                                |
 | dbinom           | stats/pdf-binomial         | equivalent         | function |                                                |
